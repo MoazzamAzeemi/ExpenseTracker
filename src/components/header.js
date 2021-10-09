@@ -2,17 +2,17 @@ import React from "react";
 
 function Header() {
     return (
-        <header className="App App-header" >
-            <h4>
-                Developed by<br />
-                <a
+        <header>
+            <h4 className="bb mv3">
+                Expense Tracker by<br />
+            <a
                     className="App-link"
                     href="https://github.com/MoazzamAzeemi"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     Moazzam Azeemi
-                </a>
+            </a>
             </h4>
         </header>
     );
