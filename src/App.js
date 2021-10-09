@@ -4,18 +4,15 @@ import Header from './components/Header';
 import Balance from './components/Balance';
 import TransactionHistory from './components/TransactionHistory';
 import NewTransaction from './components/NewTransaction';
-import Scroll from './components/Scroll';
 
 function App() {
   return (
     <>
-    <div className="tc f3">
+    <div className="tc f3 bg-light-blue pa3 br4">
       <Header />
-      <Balance balance={50.05} />
+      <Balance balance={50-50} />
       <TransactionHistory />
-      <NewTransaction />
-      <Scroll />      
-
+      <NewTransaction />      
     </div>
     </>
   );
