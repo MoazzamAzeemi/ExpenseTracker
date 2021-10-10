@@ -1,12 +1,12 @@
-import React, {useState} from "react";
+import React, {useReducer} from "react";
+import calculator from "./Calculator";
 
 function NewTransaction() {
-    const {detail, setDetail} = useState("");
-    const {amount, setAmount} = useState(0);
+    let [state, dispatch] = useReducer(calculator, 0);    
     return (        
         <div className="ba br3 pa1">
-        <h4 className="">
-                Enter New Transaction
+            <h4 className="">
+                Enter New Transaction {state}
             </h4>
             <div className="fl w-50 pa2 bg-green mv1">
                 <input className="" type="radio" vlaue="Income" name="entry" /> Income
@@ -24,7 +24,7 @@ function NewTransaction() {
                 <input className="input-reset ba b--black-20 pa1 mb1 db w-100" type="number" min="0" aria-describedby="name-desc"  placeholder="Enter Amount" />                
             </div>
 
-            <button className="f4 link dim ph3 pv2 mb2 dib white br3 bg-dark-gray" onClick={detail="new detail"}>Record Transaction</button>
+            <button className="f4 link dim ph3 pv2 mb2 dib white br3 bg-dark-gray" onClick={()=> { dispatch({type:"INCREMENT", val: 67}); }}>Record Transaction</button>
         </div>            
     );
 }
