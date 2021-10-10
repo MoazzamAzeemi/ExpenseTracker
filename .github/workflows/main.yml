@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Deploy class 005 assignment
+name: Deploy Expense Tracker App
 
 # Controls when the action will run. 
 on:
