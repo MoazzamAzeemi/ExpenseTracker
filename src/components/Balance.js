@@ -11,7 +11,7 @@ function Balance(props) {
         <div className="mv3 ba br3 pl2 pr2 pb4">        
             <h4>
                 Current Balance<br/>
-                <div className={`f2 ${bg}`}>
+                <div className={`f2 br3 ${bg}`}>
                     ${(props.balance).toFixed(2)}/-
                 </div>
                 <div className="">

@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
     return (
         <header>
-            <h4 className="bb mb3 f4">
+            <h4 className="mb3 f4">
                 Expense Tracker by<br />
             <a
                     className="App-link"
@@ -13,7 +13,8 @@ function Header() {
                 >
                     Moazzam Azeemi
             </a>
-            </h4>
+            <hr className="mw5"></hr>
+            </h4>            
         </header>
     );
 }
